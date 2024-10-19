@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 //import HomeView from '../views/HomeView.vue'
 import mainPage from '@/components/mainPage.vue'
 import Footer from '@/components/Footer.vue'
+import success from '@/components/success.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -21,6 +23,11 @@ const router = createRouter({
           component: Footer
         }
       ]
+    },
+    {
+      path: '/success',
+      name: 'success',
+      component: success,
     },
     // {
     //   path: '/about',
